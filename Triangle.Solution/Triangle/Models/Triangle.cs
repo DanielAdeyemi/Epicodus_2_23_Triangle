@@ -1,4 +1,4 @@
-namespace Triangle
+namespace WorkTriangle
 {
   public class Triangle
   {

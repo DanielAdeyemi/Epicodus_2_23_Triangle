@@ -8,14 +8,25 @@ namespace UserTriangle
   {
     public static void Main()
     {
-      Console.WriteLine("Please enter the length of one side of your triangle:");
-      int side1=int.Parse(Console.ReadLine());
-      Console.WriteLine("Please enter the length of the second side of your triangle:");
-      int side2=int.Parse(Console.ReadLine());
-      Console.WriteLine("Please enter the length of the third side of your triangle:");
-      int side3=int.Parse(Console.ReadLine());
+      int[] input = {0, 0, 0};
+      for (int i = 0; i < 3; i++)
+      {
+        Console.WriteLine($"Please enter the length side {i+1} of your triangle:");
+        string sideUser = Console.ReadLine();
+        if (string.IsNullOrEmpty(sideUser))
+        { 
+          Console.WriteLine("You should provide an input!");
+          Main();
+        }
+        else if (!int.TryParse(sideUser, out int number))
+        {
+          Console.WriteLine("You need to provide a number!");
+          Main();
+        } 
+        input[i] = int.Parse(sideUser);
+      }
       Triangle triangle = new Triangle();
-      Console.WriteLine(triangle.ValidateTriangle(side1,side2,side3));
+      Console.WriteLine(triangle.ValidateTriangle(input[0], input[1], input[2]));
     }
   }
 }

@@ -20,7 +20,7 @@ namespace Triangle
       {
         return "Isosceles Triangle";
       }
-      return "valid";
+      return "Scalene Triangle";
     }
   }
 }

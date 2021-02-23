@@ -39,5 +39,12 @@ namespace Triangle.Tests
             Triangle testTriangle = new Triangle();
             Assert.AreEqual("Equilateral Triangle", testTriangle.ValidateTriangle(4,4,4));
         }
+
+        [TestMethod]
+        public void ValidateTriangle_ScaleneTriangle_True()
+        {
+            Triangle testTriangle = new Triangle();
+            Assert.AreEqual("Scalene Triangle", testTriangle.ValidateTriangle(3,4,5));
+        }
     }
 }

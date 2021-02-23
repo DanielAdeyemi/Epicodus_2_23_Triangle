@@ -25,5 +25,19 @@ namespace Triangle.Tests
             Triangle testTriangle = new Triangle();
             Assert.AreEqual("invalid", testTriangle.ValidateTriangle(2,2,8));
         }
+
+        [TestMethod]
+        public void ValidateTriangle_IsoscaleTriangle_True()
+        {
+            Triangle testTriangle = new Triangle();
+            Assert.AreEqual("Isosceles Triangle", testTriangle.ValidateTriangle(4,4,5));
+        }
+
+        [TestMethod]
+        public void ValidateTriangle_EquilateralTriangle_True()
+        {
+            Triangle testTriangle = new Triangle();
+            Assert.AreEqual("Equilateral Triangle", testTriangle.ValidateTriangle(4,4,4));
+        }
     }
 }

@@ -1,5 +1,5 @@
 ## Triangle Checker
-#### *Epicodus Practice Lesson #  (Week 1 of C#)  2/23/2021*
+#### *Epicodus Practice Lesson #10  (Week 1 of C#)  2/23/2021*
 ***By Daniel Adeyemi and Dani Renner***
 ___
 ### This project is not in a complete or portfolio ready state, and should not be considered as representation of professional work.
@@ -19,16 +19,17 @@ ___
 * Execute **code .** command in your terminal and it will open all source code in your code editor.    
 *Note: To run this project locally you will need to have .NET Core. You can check if you have .NET Core by running dotnet --version in the command line. If you do not have .NET Core please find more information and download [here](https://dotnet.microsoft.com/download/dotnet)*
 ### Specs:
+<details>
 * validate if numbers more than 0: *Assert.AreEqual(valid, testTriangle.ValidateTriangle(3,4,5))*    
 *Assert.AreEqual(invalid, testTriangle.ValidateTriangle(3,-4,0))*
 * validate if sides can make a triangle: *Assert.AreEqual(valid, testTriangle.ValidateTriangle(3,4,5))*    
 *Assert.AreEqual(invalid, testTriangle.ValidateTriangle(2,2,8))*
-* if just 2 sides are equal display Isoscales Triangle: *Assert.AreEqual(Isoscales Triangle, testTriangle.ValidateTriangle(4,4,5))*    
+* if just 2 sides are equal display Isosceles Triangle: *Assert.AreEqual(Isosceles Triangle, testTriangle.ValidateTriangle(4,4,5))*    
 *Assert.AreEqual(valid, testTriangle.ValidateTriangle(3,4,5))*
 * if all sides are equal display Equilateral Triangle: *Assert.AreEqual(Equilateral Triangle, testTriangle.ValidateTriangle(4,4,4))*    
 *Assert.AreEqual(valid, testTriangle.ValidateTriangle(3,4,5))*
 * if no sides are equal display Scalene Triangle: *Assert.AreEqual(Scaleline Triangle, testTriangle.ValidateTriangle(3,4,5))*
-
+</details>
 
 
 #### Running Tests:

@@ -23,9 +23,9 @@ ___
 *Assert.AreEqual(invalid, testTriangle.ValidateTriangle(3,-4,0))*
 * validate if sides can make a triangle: *Assert.AreEqual(valid, testTriangle.ValidateTriangle(3,4,5))*    
 *Assert.AreEqual(invalid, testTriangle.ValidateTriangle(2,2,8))*
-* if all sides are equal display Equilateral Triangle: *Assert.AreEqual(Equilateral Triangle, testTriangle.ValidateTriangle(4,4,4))*    
-*Assert.AreEqual(valid, testTriangle.ValidateTriangle(3,4,5))*
 * if just 2 sides are equal display Isoscales Triangle: *Assert.AreEqual(Isoscales Triangle, testTriangle.ValidateTriangle(4,4,5))*    
+*Assert.AreEqual(valid, testTriangle.ValidateTriangle(3,4,5))*
+* if all sides are equal display Equilateral Triangle: *Assert.AreEqual(Equilateral Triangle, testTriangle.ValidateTriangle(4,4,4))*    
 *Assert.AreEqual(valid, testTriangle.ValidateTriangle(3,4,5))*
 * if no sides are equal display Scalene Triangle: *Assert.AreEqual(Scaleline Triangle, testTriangle.ValidateTriangle(3,4,5))*
 
